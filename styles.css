@@ -1,0 +1,129 @@
+@keyframes gradientAnimation-cold {
+  0% {
+    background-color: #0072ff;
+  }
+  50% {
+    background-color: #00c6ff;
+  }
+  100% {
+    background-color: #00ffcb;
+  }
+}
+
+@keyframes gradientAnimation-moderate {
+  0% {
+    background-color: #8cf790f0;
+  }
+  50% {
+    background-color: #bfeb74;
+  }
+  100% {
+    background-color: #d9ef47;
+  }
+}
+
+@keyframes gradientAnimation-hot {
+  0% {
+    background-color: #ffb700;
+  }
+  50% {
+    background-color: #ff8c00;
+  }
+  100% {
+    background-color: #ff3300;
+  }
+}
+
+
+
+@font-face{
+  font-family: myFont;
+  src:url(font.otf)
+   
+}
+
+body {
+  animation: gradientAnimation-cold 3.5s ease infinite alternate;
+  animation: gradientAnimation-moderate 3.5s ease infinite alternate;
+  animation: gradientAnimation-hot 3.5s ease infinite alternate;
+}
+
+.wrapper-main{
+  width: 500px;
+  margin-left: 537px;
+  margin-top: 300px;
+}
+
+
+h1 {
+  font-family: myFont;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+
+#temperature {      
+  font-family: myFont; 
+  text-align: center;
+  font-size: 24px;
+} 
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+#recipeSuggestion {
+  text-align: center;
+  font-family: myFont;
+  font-size: 20px;
+  margin-top: 30px;
+}
+/* Reset default margin and padding */
+body, h1, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles */
+header {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+.image-container {
+  text-align: right; /* Center-align the image */
+  margin-top: 50px; /* Add margin to the top of the image */
+  margin-left: 685px;
+}
+
+img {
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+  height: 200px; /* Maintain the image's aspect ratio */
+  display: block; /* Remove any default inline display */
+}
+
+.wrapper-main {
+  text-align: center; /* Center-align the content */
+  margin-top: 20px; /* Add margin to the top of the content */
+}
+
+/* Additional styles for buttons or specific elements can be added here */
+
+
+
+

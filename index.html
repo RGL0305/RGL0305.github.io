@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Climate Chef</title>
+  <link rel="stylesheet" href="styles.css">
+</head> 
+
+<body> 
+  <header>
+    <h1>Climate Chef</h1>
+  </header>
+
+  <div class="image-container">
+    <img src="beef-stew.png" alt="Beef Stew Image">
+  </div>
+
+  <div class="wrapper-main">
+    <p id="temperature">Click to get a Recipe based on the Weather!</p>
+    <button id="getRecipe">Get Recipe</button>
+    <div id="recipeSuggestion"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var body = document.getElementById('main-body');
+      var button = document.getElementById('getRecipe'); // Replace 'your-button-id' with the actual id of your button
+
+      button.addEventListener('click', function () {
+        body.classList.toggle('animate-gradient'); // 'animate-gradient' is the class that triggers the gradient animation
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
